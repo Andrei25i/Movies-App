@@ -11,7 +11,7 @@ This is my first React app I created as a personal project to learn some of the 
 ⚛️ [React](https://react.dev/) 
 for the frontend
 
-🎥 [The Movie Database API](https://developer.themoviedb.org/docs/getting-started) for mvoies and shows searching  
+🎥 [The Movie Database API](https://developer.themoviedb.org/docs/getting-started) for movies and shows searching  
 
 ## Requirements
 1. [Node.js](https://nodejs.org/en)
