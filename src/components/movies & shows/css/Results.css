@@ -1,0 +1,21 @@
+.results-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    font-size: 20px;
+}
+
+.results-wrapper {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.results-wrapper.fade {
+    opacity: 0;
+}

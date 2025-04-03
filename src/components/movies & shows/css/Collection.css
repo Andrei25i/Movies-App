@@ -1,0 +1,32 @@
+.collection-container button {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+    padding: 10px;
+    cursor: none;
+    border-radius: 10px;
+}
+
+.collection-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.collection-container img {
+    width: 30px;
+}
+
+@media (min-width: 1024px) {
+    .collection-container button {
+        cursor: pointer;
+    }   
+}

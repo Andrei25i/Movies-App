@@ -1,0 +1,15 @@
+.overview {
+    display: flex;
+    gap: 15px;
+}
+
+.overview img {
+    width: 120px;
+    height: 180px;
+    border-radius: 10px;
+}
+
+.text-container p {
+    font-size: 15px;
+    font-weight: 500;
+}

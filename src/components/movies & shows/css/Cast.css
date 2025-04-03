@@ -1,0 +1,39 @@
+.cast-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cast-container h2 {
+    margin-bottom: 20px;
+}
+
+.actors-container {
+    width: fit-content;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    row-gap: 20px;
+    column-gap: 80px;    
+}
+
+.actor {
+    max-width: 150px;
+    min-width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.actor img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.actor p {
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+}

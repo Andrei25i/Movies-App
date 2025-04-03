@@ -1,0 +1,42 @@
+nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: black;
+    border-top: solid gray 1px;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15%;
+    z-index: 1;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+nav .tab {
+    width: 70px;
+    padding: 1%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    text-decoration: none;
+    color: #808080;
+}
+
+nav .tab span, nav .tab svg {
+    transition: color 0.3s ease-in-out;
+}
+
+.active span, .active svg {
+    color: white;
+}
+
+@media (min-width: 600px) {
+    nav {
+        gap: 10%;
+    }
+}
