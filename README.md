@@ -35,7 +35,7 @@ VITE_API_KEY = "YOUR API KEY HERE"
 ```
 
 ## Usage
-1. To use the app, run the command:
+1. To start the app, run the command:
 ```bash
 npm run dev
 ```
