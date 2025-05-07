@@ -41,17 +41,14 @@ npm run dev
 ```
 2. Access the localhost address of the project.
 
-## Screenshots
+## Screenshots and Video
 ![Screenshot 2025-04-03 103847](https://github.com/user-attachments/assets/fe0aee6e-ace2-4aaf-a917-8116ba22c191)
-
 
 ![Screenshot 2025-04-03 103936](https://github.com/user-attachments/assets/44a895f8-79c6-4aa4-9597-443e9c3c94c4)
 
-
 ![Screenshot 2025-04-03 103955](https://github.com/user-attachments/assets/1751c96d-aaa9-46cd-82d9-d9e9965751dc)
 
-##Video
-![Demo video](https://github.com/user-attachments/assets/4213e99c-07b5-4ca9-8859-e7a912a822d8)
+[Demo Video](https://github.com/user-attachments/assets/4213e99c-07b5-4ca9-8859-e7a912a822d8)
 
 
 ## Live Demo
