@@ -48,7 +48,7 @@ npm run dev
 
 ![Screenshot 2025-04-03 103955](https://github.com/user-attachments/assets/1751c96d-aaa9-46cd-82d9-d9e9965751dc)
 
-[Demo Video](https://github.com/user-attachments/assets/4213e99c-07b5-4ca9-8859-e7a912a822d8)
+[Demo Video](https://github.com/user-attachments/assets/437503a8-8c2a-48a1-a33c-6af22728d9dc)
 
 
 ## Live Demo
