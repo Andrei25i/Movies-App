@@ -4,7 +4,8 @@
   cursor: none;
 }
 
-.card img, .card span {
+.card img,
+.card span {
   width: 120px;
   height: 180px;
   border-radius: 10px;
@@ -15,8 +16,11 @@
   transition: border-color ease-in-out 0.2s;
 }
 
-.card img:hover, .card span:hover {
+@media (hover: hover) and (pointer: fine) {
+  .card img:hover,
+  .card span:hover {
     border-color: white;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -24,7 +28,8 @@
     cursor: pointer;
   }
 
-  .card img, .card span {
+  .card img,
+  .card span {
     width: 170px;
     height: 250px;
     border-radius: 15px;
