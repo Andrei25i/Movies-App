@@ -1,7 +1,8 @@
 .cast-container {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    gap: 50px;
 }
 
 .cast-container h2 {
@@ -9,31 +10,39 @@
 }
 
 .actors-container {
-    width: fit-content;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
-    row-gap: 20px;
-    column-gap: 80px;    
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.actors-container::-webkit-scrollbar {
+    display: none;
 }
 
 .actor {
-    max-width: 150px;
-    min-width: 120px;
+    min-width: 100px;
+    max-width: 100px;
     display: flex;
+    flex-direction: column;
+    justify-content: first baseline;
     align-items: center;
-    justify-content: center;
 }
 
 .actor img {
-    width: 30px;
-    height: 30px;
+    width: 70px;
+    height: 70px;
     object-fit: cover;
     border-radius: 50%;
 }
 
-.actor p {
+.actor .name {
     font-size: 15px;
     font-weight: 700;
+    text-align: center;
+}
+
+.actor .character {
+    font-size: 12px;
     text-align: center;
 }

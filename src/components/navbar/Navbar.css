@@ -27,12 +27,25 @@ nav .tab {
     color: #808080;
 }
 
-nav .tab span, nav .tab svg {
-    transition: color 0.3s ease-in-out;
-}
-
 .active span, .active svg {
     color: white;
+}
+
+@media (min-width: 1024px) {
+    nav {
+        top: 0;
+        left: 0;
+        bottom: auto;
+        width: 7%;
+        height: 100%;
+        border: none    ;
+        flex-direction: column;
+        background: transparent;
+    }
+
+    .movies-wrapper, .shows-wrapper, .content-wrapper {
+        padding-left: 8%;
+    }
 }
 
 @media (min-width: 600px) {

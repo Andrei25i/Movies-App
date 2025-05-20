@@ -82,7 +82,7 @@ const MovieDetails = () => {
 
         const fetchCredits = fetch(`https://api.themoviedb.org/3/movie/${id}/credits?language=en-US`, options)
             .then(res => res.json())
-            .then(res => setCast(res.cast.slice(0, 10)))
+            .then(res => setCast(res.cast.slice(0, 20)))
             .catch(err => {
                 console.error(err);
                 setLoading(false);
@@ -112,13 +112,14 @@ const MovieDetails = () => {
     return (
         <div className='content-wrapper'>
             {details ? <Header type={"movie"} details={details} ageRating={ageRating} /> : ""}
-            {details ? <Overview details={details} /> : ""}
             {details ? <Genres_Rating details={details} /> : ""}
-            {trailer ? <Trailer trailer={trailer} /> : ""}
+            {details ? <Overview details={details} /> : ""}
             {cast.length !== 0 ? <Cast cast={cast} /> : ""}
+            {trailer ? <Trailer trailer={trailer} /> : ""}
+            
             {details ? <Status type={"movie"} details={details} /> : ""}
             {details.belongs_to_collection ? <Collection title={details.belongs_to_collection.name} id={details.belongs_to_collection.id} /> : ""}
-            {recommendations.length !== 0 ? <Category type={"movie"} ref={recommendationsRef} title={"Recommendations"} category={recommendations} /> : "" }
+            {recommendations.length !== 0 ? <Category type={"movie"} ref={recommendationsRef} title={"More Like This"} category={recommendations} /> : "" }
         </div>
   )
 }

@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 
 import SearchBar from '../../movies & shows/SearchBar';
@@ -8,6 +8,7 @@ import MovieIcon from '../../../assets/MovieIcon';
 import { options } from '../../../options';
 
 import "./Movies.css";
+import TrendingCarousel from '../../movies & shows/TrendingCarousel';
 
 const shuffleArray = (array) => {
     return array.sort(() => Math.random() - 0.5);
@@ -87,7 +88,7 @@ const Movies = () => {
             setLoading(true);
             Promise.all([
                 fetch('https://api.themoviedb.org/3/movie/now_playing?language=en-US&page=1', options).then(res => res.json()).then(data => setNowPlaying(shuffleArray(data.results))),
-                fetch('https://api.themoviedb.org/3/trending/movie/week?language=en-US', options).then(res => res.json()).then(data => setTrending(shuffleArray(data.results))),
+                fetch('https://api.themoviedb.org/3/trending/movie/week?language=en-US', options).then(res => res.json()).then(data => setTrending(data.results)),
                 fetch('https://api.themoviedb.org/3/discover/movie?certification.lte=R&certification_country=US&include_adult=false&include_video=false&language=en-US&page=1&sort_by=revenue.desc&with_genres=28', options).then(res => res.json()).then(data => setAction(shuffleArray(data.results))),
                 fetch('https://api.themoviedb.org/3/discover/movie?certification.lte=R&certification_country=US&include_adult=false&include_video=false&language=en-US&page=1&sort_by=revenue.desc&with_genres=12', options).then(res => res.json()).then(data => setAdventure(shuffleArray(data.results))),
                 fetch('https://api.themoviedb.org/3/discover/movie?certification.lte=R&certification_country=US&include_adult=false&include_video=false&language=en-US&page=1&sort_by=revenue.desc&with_genres=16', options).then(res => res.json()).then(data => setAnimation(shuffleArray(data.results))),
@@ -234,6 +235,8 @@ const Movies = () => {
                     
                 <SearchBar type={"Movie"}/>
             </header>
+            
+            <TrendingCarousel type={"movie"} movies={trending.slice(0, 5)} />
 
             <Category type={"movie"} ref={nowPlayingRef} title={"Now in Theaters"} category={nowPlaying}/>
             <Category type={"movie"} ref={trendingRef} title={"Trending"} category={trending}/>

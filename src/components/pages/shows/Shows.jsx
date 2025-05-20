@@ -6,6 +6,7 @@ import Category from '../../movies & shows/Category';
 import Loading from '../../display/Loading';
 import TvIcon from '../../../assets/TvIcon';
 import { options } from '../../../options';
+import TrendingCarousel from '../../movies & shows/TrendingCarousel';
 
 const shuffleArray = (array) => {
     return array.sort(() => Math.random() - 0.5);
@@ -49,7 +50,7 @@ const Shows = () => {
             setLoading(true);
             Promise.all([
                 fetch('https://api.themoviedb.org/3/tv/top_rated?language=en-US&page=1', options).then(res => res.json()).then(data => setTop_rated(data.results)),
-                fetch('https://api.themoviedb.org/3/trending/tv/week?language=en-US', options).then(res => res.json()).then(data => setTrending(shuffleArray(data.results))),
+                fetch('https://api.themoviedb.org/3/trending/tv/week?language=en-US', options).then(res => res.json()).then(data => setTrending(data.results)),
                 fetch('https://api.themoviedb.org/3/discover/tv?include_adult=false&include_null_first_air_dates=false&language=en-US&page=1&sort_by=popularity.desc&with_genres=10759', options).then(res => res.json()).then(data => setAction(shuffleArray(data.results))),
                 fetch('https://api.themoviedb.org/3/discover/tv?include_adult=false&include_null_first_air_dates=false&language=en-US&page=1&sort_by=popularity.desc&with_genres=16', options).then(res => res.json()).then(data => setAnimation(shuffleArray(data.results))),
                 fetch('https://api.themoviedb.org/3/discover/tv?include_adult=false&include_null_first_air_dates=false&language=en-US&page=1&sort_by=popularity.desc&with_genres=9648', options).then(res => res.json()).then(data => setMystery(shuffleArray(data.results))),
@@ -135,6 +136,8 @@ const Shows = () => {
 
                 <SearchBar type={"Show"}/>
             </header>
+
+            <TrendingCarousel type={"show"} movies={trending.slice(0, 5)} />
 
             <Category type={"show"} ref={topRatedRef} title={"Top Rated"} category={top_rated}/>
             <Category type={"show"} ref={trendingRef} title={"Trending"} category={trending}/>

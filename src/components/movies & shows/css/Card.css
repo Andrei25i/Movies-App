@@ -1,20 +1,32 @@
 .card {
-    display: flex;
-    flex-direction: column;
-    cursor: none;
+  display: flex;
+  flex-direction: column;
+  cursor: none;
 }
 
 .card img, .card span {
-    width: 120px;
-    height: 180px;
-    border-radius: 10px;
-    -webkit-user-drag: none;
-    -webkit-user-select: none;
-    user-select: none;
+  width: 120px;
+  height: 180px;
+  border-radius: 10px;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  user-select: none;
+  border: solid transparent 2px;
+  transition: border-color ease-in-out 0.2s;
+}
+
+.card img:hover, .card span:hover {
+    border-color: white;
 }
 
 @media (min-width: 1024px) {
-    .card {
-        cursor: pointer;
-    }   
+  .card {
+    cursor: pointer;
+  }
+
+  .card img, .card span {
+    width: 170px;
+    height: 250px;
+    border-radius: 15px;
+  }
 }

@@ -13,11 +13,11 @@
     top: 0;
     width: 100%;
     height: 50px;
-    padding: 10px;
+    padding: 0 5%;
     background: #181818;
     display: flex;
     justify-content: space-between;
-    z-index: 1;
+    z-index: 2;
 }
 
 .buttons .button {
@@ -25,7 +25,6 @@
     height: 50px;
     border-radius: 50%;
     padding: 10px;
-    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,27 +39,66 @@
     opacity: 0;
 }
 
+.hero {
+    position: relative;
+    align-self: center;
+    width: 45%;
+}
+
+.hero img, .hero .ripple {
+    width: 100%;
+    border-radius: 15px;
+    display: block;
+}
+
+.hero img {
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
 .title {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+    gap: 5px;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 15px 30px;
 }
 
 .title h1 {
-    font-size: 22px;
+    font-size: clamp(20px, 3vw, 30px);
     font-weight: 700;
-    text-align: center;
+    text-align: left;
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.9);
 }
 
 .main-info {
     display: flex;
     align-items: center;
+    width: fit-content;
     gap: 20px;
 }
 
 .main-info p {
-    font-size: 15px;
+    font-size: clamp(10px, 2vw, 15px);
     font-weight: 500;
+    text-shadow: 2px 4px 12px rgba(0,0,0,0.7);
+}
+
+@media only screen and (max-width: 900px) {
+    .hero {
+        width: 75%;
+    }
+
+    .hero img {
+        border-radius: 10px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .hero {
+        width: 95%;
+    }
 }

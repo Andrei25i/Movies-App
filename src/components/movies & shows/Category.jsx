@@ -1,4 +1,4 @@
-import React, { forwardRef } from 'react';
+import { forwardRef } from 'react';
 import Card from './Card';
 
 import scroll_left from '../../assets/scroll-left.svg';
