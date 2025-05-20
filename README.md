@@ -41,15 +41,13 @@ npm run dev
 ```
 2. Access the localhost address of the project.
 
-## Screenshots and Video
-![Screenshot 2025-04-03 103847](https://github.com/user-attachments/assets/fe0aee6e-ace2-4aaf-a917-8116ba22c191)
 
-![Screenshot 2025-04-03 103936](https://github.com/user-attachments/assets/44a895f8-79c6-4aa4-9597-443e9c3c94c4)
-
-![Screenshot 2025-04-03 103955](https://github.com/user-attachments/assets/1751c96d-aaa9-46cd-82d9-d9e9965751dc)
-
-[Demo Video](https://github.com/user-attachments/assets/437503a8-8c2a-48a1-a33c-6af22728d9dc)
-
+## Screenshots
+![Screenshot 2025-05-20 160807](https://github.com/user-attachments/assets/d58a3e9e-f59f-4e8f-a0cd-195238c53a51)
+![Screenshot 2025-05-20 161005](https://github.com/user-attachments/assets/71c08078-417b-47a1-ba40-1fa310e2f7fb)
+![Screenshot 2025-05-20 161235](https://github.com/user-attachments/assets/863b5d15-6c5d-4441-a35a-d139f1a9d910)
+![Screenshot 2025-05-20 161245](https://github.com/user-attachments/assets/3f92134d-024e-414a-85fa-52e72029e2b3)
+![Screenshot 2025-05-20 161315](https://github.com/user-attachments/assets/92b06b22-3ff0-48c2-90fe-59130d758734)
 
 ## Live Demo
 https://movies-app-9e3e.onrender.com
