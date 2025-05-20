@@ -14,6 +14,15 @@
   width: fit-content;
 }
 
+.fade-slide {
+  opacity: 0.1;
+  transition: opacity 0.5s;
+}
+
+.fade-slide.visible {
+  opacity: 1;
+}
+
 .trending-carousel h2 {
   margin-bottom: 20px;
 }
