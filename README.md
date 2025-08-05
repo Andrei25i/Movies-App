@@ -43,11 +43,11 @@ npm run dev
 
 
 ## Screenshots
-![Screenshot 2025-05-20 160807](https://github.com/user-attachments/assets/d58a3e9e-f59f-4e8f-a0cd-195238c53a51)
-![Screenshot 2025-05-20 161005](https://github.com/user-attachments/assets/71c08078-417b-47a1-ba40-1fa310e2f7fb)
-![Screenshot 2025-05-20 161235](https://github.com/user-attachments/assets/863b5d15-6c5d-4441-a35a-d139f1a9d910)
-![Screenshot 2025-05-20 161245](https://github.com/user-attachments/assets/3f92134d-024e-414a-85fa-52e72029e2b3)
-![Screenshot 2025-05-20 161315](https://github.com/user-attachments/assets/92b06b22-3ff0-48c2-90fe-59130d758734)
+![Screenshot 2025-08-05 125247](https://github.com/user-attachments/assets/6d0fb221-724f-4713-973e-2caff717916b)
+![Screenshot 2025-08-05 125313](https://github.com/user-attachments/assets/3d117042-ecee-491d-86b3-8a00783c5a59)
+![Screenshot 2025-08-05 125331](https://github.com/user-attachments/assets/2d28b651-6b26-4c95-8965-2bb1555fbe11)
+![Screenshot 2025-08-05 125345](https://github.com/user-attachments/assets/fab36ffe-2306-41ce-a69a-cab58d5bf772)
+![Screenshot 2025-08-05 125422](https://github.com/user-attachments/assets/231aadf8-d95d-4fc3-abdb-d22d3f07920e)
 
 ## Live Demo
 https://movies-app-9e3e.onrender.com
