@@ -2,8 +2,8 @@ import "./css/Cast.css";
 import { ButtonBase } from '@mui/material';
 import scroll_left from '../../assets/scroll-left.svg';
 import scroll_right from '../../assets/scroll-right.svg';
-import { act, useRef } from "react";
-import no_image from "../../assets/no-image.jpg";
+import { useRef } from "react";
+import no_image from "../../assets/generic_avatar.png";
 
 const Cast = ({ cast }) => {
     if (cast.length === 0) return <></>;

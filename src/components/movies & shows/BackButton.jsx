@@ -1,4 +1,3 @@
-import React from 'react';
 import { ButtonBase } from '@mui/material';
 
 import back_arrow from '../../assets/back_arrow.svg';

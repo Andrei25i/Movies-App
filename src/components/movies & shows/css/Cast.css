@@ -27,6 +27,7 @@
     flex-direction: column;
     justify-content: first baseline;
     align-items: center;
+    gap: 7px;
 }
 
 .actor img {

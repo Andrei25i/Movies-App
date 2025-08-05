@@ -18,7 +18,7 @@
     max-width: 200px;
     justify-content: center;
     gap: 10px;
-    font-size: 10px;
+    font-size: 15px;
 }
 
 .stars {
@@ -30,8 +30,8 @@
 }
 
 .stars img {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
 }
 
 .stars p {
@@ -43,5 +43,5 @@
 
 .darker {
     color: #808080;
-    font-size: 10px;
+    font-size: 13px;
 }

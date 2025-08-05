@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'poppins';
+    font-family: "Poppins", sans-serif;
     animation: fade-in 0.3s;
 }
 
@@ -29,8 +29,8 @@ body {
 .loading-spin {
     width: 64px;
     height: 64px;
-    border: solid gray 5px;
-    border-top-color: white;
+    border: solid white 5px;
+    border-top-color: #FE6348;
     border-radius: 50%;
     animation: spin 1s linear infinite;
 }

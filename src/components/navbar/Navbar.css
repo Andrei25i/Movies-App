@@ -16,8 +16,8 @@ nav {
 
 nav .tab {
     width: 70px;
-    padding: 1%;
-    border-radius: 10px;
+    padding: 5px;
+    border-radius: 7px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -27,8 +27,8 @@ nav .tab {
     color: #808080;
 }
 
-.active span, .active svg {
-    color: white;
+.active .label, .active svg {
+    color: #FE6348;
 }
 
 @media (min-width: 1024px) {

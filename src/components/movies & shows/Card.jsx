@@ -22,6 +22,7 @@ const Card = ({ type, card }) => {
         ? <img src={`https://image.tmdb.org/t/p/w500/${card.poster_path}`} alt="" />
         : <img src={no_image} alt="" />
       }
+      <p>{card.title || card.name}</p>
     </ButtonBase>
   );
 };
